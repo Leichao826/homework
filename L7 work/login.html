@@ -60,6 +60,13 @@
 		outline: none;
 		margin-top: 0.1rem;
 	}
+	 .pwd .fa{
+	 	position: absolute;
+		 top: 0.5rem;
+		right: 1rem;
+		color: gainsboro;
+		padding: 0.05rem;
+	 }
 	.forget{
 		position: absolute;
 		top: 0.5rem;
@@ -159,7 +166,9 @@
 		</div>
 		<div class="login-in">
 	 	<input class="user" id="username"  type="text" v-model="name" placeholder="用户名/邮箱/已验证手机" >
+	 	<div class="pwd">
 	 	<input class="password" type="password" name="" id="password" v-model="pwd" placeholder="请输入密码" />
+	 	<i class="fa fa-angle-down"></i></div>
 	 	<button class="forget" ><span class="shu">|</span>&nbsp;&nbsp; 忘记密码</button>
 	 	<button class="go-in"      :class="{'disabled':loginEnable}" @click="login">登录</button>
 	 	
@@ -173,5 +182,22 @@
 	  </div>
 	   
 	 </div>
+	 <script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	 	
+	 <script type="text/javascript">
+	 	var icon=document.querySelector(".pwd i");
+	 	var pd=document.querySelector(".password")
+	    icon.onclick=function(){
+	    	if (icon.className=="fa fa-angle-down") {
+	    		icon.className="fa fa-eye";
+	    		pd.type="text";
+	    	} else{
+	    		icon.className="fa fa-angle-down";
+	    		pd.type="password"
+	    	}
+	    }
+	    
+	 </script>
+	 
 	</body>
 </html>
