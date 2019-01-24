@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<style type="text/css">
+		
+		html{
+			font-size: calc(100vw/7.5);
+		}
+		body{
+				margin: 0px;
+				font-size: 0.32rem;
+			}
+		
+		.top-bar {
+		width: 100%;
+		background-color: #fff;
+		color: #252525;
+		height: 0.44rem;
+		text-align: center;
+		display: flex;
+		border-bottom: solid 1px #e5e5e5;
+	}
+		.top-bar .fa{
+			padding-top: 0.1rem;
+			
+		}
+		.top-bar span{
+			font-size: 0.2rem;
+		     flex: 1;
+		     padding-top: 0.1rem;
+		}
+		.login-in{
+		position: relative;
+		top: 0.4rem;
+		width: 100%;
+	}
+	.user{
+		width:100%;
+		height: 0.4rem;
+		border: none;
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+		font-size: 0.18rem;
+		outline: none;
+	}
+	
+	.password{
+		width:100%;
+		height: 0.4rem;
+		border: none;
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+		font-size: 0.18rem;
+		outline: none;
+		margin-top: 0.1rem;
+	}
+	.forget{
+		position: absolute;
+		top: 0.5rem;
+		right: 0.1rem;
+		font-size: 0.14rem;
+	    outline: none;
+	    border: none;
+	    height: 0.4rem;
+	    background-color: white;
+	    text-align: center;
+	    
+	}
+	.shu{
+		color: gainsboro;
+		height: 0.4rem;
+	}
+	.go-in{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border-radius: 0.2rem;
+		height: 0.4rem;
+		margin-top: 0.2rem;
+		color: white;
+	   background-image: linear-gradient(90deg,#fab3b3,#ffbcb3 73%,#ffcaba);
+	   text-align: center;
+	   font-size: 0.2rem;
+	   outline: none;
+	   border: none;
+	}
+	.disabled{
+		background-image: linear-gradient(90deg,#f10000,#ff2000 73%,#ff4f18);
+     }   
+     .message{
+     	font-size: 0.14rem;
+     	color: gainsboro;
+     	margin-left: 0.25rem;
+     	margin-top: 0.2rem;
+     } 
+     .phone{
+     	font-size: 0.14rem;
+     	color: gainsboro;
+     	float: right;
+     	margin-right: 0.25rem;
+     	margin-top: 0.2rem;
+     }
+     .line{
+     	background-color: gainsboro;
+     	height: 0.01rem;
+     	position: relative;
+     	margin-top: 0.8rem;
+     }
+     .line h4{
+     	position: absolute;
+     	top: -0.28rem;
+     	left: 45%;
+     	font-size: 0.14rem;
+     	z-index: 1000;
+     	color: grey;
+     }
+     .line .fa{
+     	position: absolute;
+     	left: 48%;
+     	top: 0.4rem;
+     	color: lightskyblue;
+     	width: 0.5rem;
+     	height: 0.5rem;
+     	
+     }
+     .line span{
+     	position: absolute;
+     	left: 48.5%;
+     	top: 0.75rem;
+     	font-size: 0.14rem;
+     	text-align: center;
+     	color: darkgrey;
+     	
+     }
+     .line p{
+     	position: absolute;
+     	left: 38%;
+     	top: 1rem;
+     	font-size: 0.12rem;
+     	color: darkgrey;
+     }
+     .line a{
+     	text-decoration: none;
+     }
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<div class="top-bar">
+			<i class="fa fa-angle-left"></i> 
+			<span>京东登录</span>
+			
+		</div>
+		<div class="login-in">
+	 	<input class="user" id="username"  type="text" v-model="name" placeholder="用户名/邮箱/已验证手机" >
+	 	<input class="password" type="password" name="" id="password" v-model="pwd" placeholder="请输入密码" />
+	 	<button class="forget" ><span class="shu">|</span>&nbsp;&nbsp; 忘记密码</button>
+	 	<button class="go-in"      :class="{'disabled':loginEnable}" @click="login">登录</button>
+	 	
+	 	<span class="message">短信验证码登录</span><span class="phone">手机快速登录</span>
+	 </div>
+	  <div class="line">
+	  	<h4>其他登录方式</h4>
+	  	<i class="fa fa-qq"></i>
+	  	<span>QQ</span>
+	  	<p>登录即代表您已同意<a href="#">京东隐私政策</a></p>
+	  </div>
+	   
+	 </div>
+	</body>
+</html>
