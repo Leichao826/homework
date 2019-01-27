@@ -1,5 +1,7 @@
 # homework
 Web移动端作业
+第八天作业地址：https://leichao826.github.io/homework/L8%20work/course
+
 第七天作业地址：https://leichao826.github.io/homework/L7%20work/index &
               https://leichao826.github.io/homework/L7%20work/login
 
