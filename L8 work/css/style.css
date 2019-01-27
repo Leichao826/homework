@@ -1,0 +1,109 @@
+/* 底部导航 */
+
+.weui-tabbar {
+	position: fixed;
+}
+
+
+/* 轮播图  */
+
+.swiper-container {
+	margin-bottom: 20px;
+}
+
+.swiper-container a {
+	display: block;
+}
+
+.swiper-container img {
+	width: 100%;
+}
+
+
+/* 快速导航  */
+
+#quick-nav {
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+#quick-nav a {
+	color: #666;
+	display: block;
+}
+
+#quick-nav span.fa {
+	font-size: 30px;
+}
+
+#quick-nav p {
+	font-size: 12px;
+	line-height: 17px;
+	margin-top: 2px;
+	white-space: nowrap;
+}
+
+
+/* 课程列表  */
+
+.course-list {
+	margin-bottom: 20px;
+}
+
+.course-list h3 {
+	padding: 18px 18px 4px;
+}
+
+
+/* 教师头像 */
+
+.course-list .weui-media-box__hd {
+	width: 70px;
+	height: 90px;
+}
+
+
+/* 课程标题 */
+
+.course-list h4 {
+	font-size: 14px;
+	line-height: 1.25em;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 2;
+	white-space: normal;
+	color: #333;
+	font-weight: 700;
+}
+
+.course-list .remark {
+	font-size: 14px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.course-list .live-name {
+	color: #999;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.course-list .other-info {
+	color: #b2b2b2;
+	font-size: 12px;
+}
+
+.course-list .price .origin {
+	text-decoration: line-through;
+}
+
+.course-list .price .current {
+	color: #f73657;
+	margin-left: 2px;
+}
