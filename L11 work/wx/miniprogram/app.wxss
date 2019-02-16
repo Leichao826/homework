@@ -1,0 +1,32 @@
+/**app.wxss**/
+@import "style/weui.wxss"
+page {
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}

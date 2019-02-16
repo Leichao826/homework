@@ -1,0 +1,4 @@
+/* miniprogram/pages/category/index.wxss */
+.con{
+  font-size: 8px
+}

@@ -1,0 +1,44 @@
+<!-- 搜索条 -->
+<view class="search-bar flex {{ isFixed?'fixed':''}}">
+  <view class='category'>
+    <text class='icon-category'></text>
+  </view>
+  <view class='input flex-item'>
+    <text class='icon-jd'></text>
+    <input placeholder="请输入搜索内容" />
+  </view>
+  <view class='login'>
+    <navigator url='#'>登录</navigator>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  indicator-color="#fff"
+  indicator-active-color="#ff0000">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" mode="widthFix" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='product-detail'>
+<navigator url='#' class='demo' wx:for="{{quickNav}}">
+<image src='{{item.image}}'></image>
+<text >{{item.title}}</text>
+</navigator>
+
+</view>
+<view class='product-list'>
+<navigator url='#' class='demo-1' wx:for="{{productList}}" wx:for-item="itemName">
+<image src='{{itemName.image}}'> </image>
+<text class='title'>{{itemName.title}}</text>
+<text class='price'>￥{{itemName.price}}</text>
+<text class='right'>看相似 </text>
+</navigator>
+
+</view>
